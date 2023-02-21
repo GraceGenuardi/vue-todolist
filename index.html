@@ -18,7 +18,7 @@
 		<div id="app" class="container py-5">
 			<h1 class="text-center font-monospace text-danger fw-bold">ToDo List</h1>
 			<div class="row py-3">
-				<label for="newTask" class="col-auto col-form-label text-danger fw-bold "
+				<label for="newTask" class="col-auto col-form-label text-danger fw-bold fs-5"
 					>Add Task:</label
 				>
 
@@ -33,12 +33,27 @@
 					/>
 				</div>
 
-                <!-- INIZIO AGGIUNTA ED ELIMINAZIONE TASK -->
+                <!-- BOTTONE AGGIUNTA TASK -->
 
                 <div class="col-auto">
 					<button class="btn btn-primary bg-danger fw-bold text-uppercase" @click="addNewTask"> <i class="fa-solid fa-plus"></i> Add</button>
 				</div>
-			</div>
+            </div>
+
+               <!-- LISTA TASK  -->
+            <ul class="list-group">
+				<li
+					v-for="(task, index) in tasks"
+					:class="{ 'list-group-item': true, 'text-decoration-line-through': task.done }"
+					:key="index"
+                    
+				>
+
+                <!-- x per eliminazione task -->
+					{{ task.text }}
+					<button class="btn-close float-end bg-danger"></button>
+				</li>
+			</ul>
 			
 				
 		</div>

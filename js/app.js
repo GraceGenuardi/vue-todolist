@@ -17,10 +17,10 @@
   data() {
   return {
   tasks: [
-  { text: "Fare la spesa", done: false },
-  { text: "Chiamare i vigili del fuoco", done: false },
-  { text: "Mandare la consegna alla classe", done: true },
-  { text: "Fare push", done: false },
+  { text: "Making the sitemap for the customer Her -Age", done: false },
+  { text: "Meeting with the SEO specialist", done: false },
+  { text: "Contact Yummy-tech customer for website restyling", done: true },
+  { text: "Afternoon Team building event", done: false },
   ],
   newTaskText: "",
   };
