@@ -1,0 +1,21 @@
+.shared {
+    color: rgba(226, 56, 56, 0.712);
+    text-align: center;
+}
+
+.shared::before {
+    content: " — ";
+    color: rgba(226, 56, 56, 0.712);
+    
+  }
+
+  .shared::after {
+    content: " — ";
+    color: rgba(226, 56, 56, 0.712);
+    
+  }
+
+  .team img{
+    width: 300px;
+
+  }
